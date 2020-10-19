@@ -25,4 +25,12 @@ func main() {
 	var a1 = [2]string{"hey", "hi"}
 	fmt.Println(a1[0], a1[1])
 	fmt.Println(len(a1))
+
+	// Maps
+	m := make(map[string]string)
+	p := make(map[string]int)
+	m["name"] = "Ujjwal"
+	m["role"] = "dev"
+	p["age"] = 16
+	fmt.Println(m["name"], m["role"], p["age"])
 }
