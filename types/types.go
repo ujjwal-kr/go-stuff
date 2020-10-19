@@ -17,4 +17,7 @@ func main() {
 	// convert to string
 	str := fmt.Sprintf("%d", d)
 	fmt.Println(str + " is good")
+
+	const e string = "hey" // not re-assignable
+	fmt.Println(e)
 }
