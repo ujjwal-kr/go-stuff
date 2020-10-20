@@ -14,4 +14,12 @@ func main() {
 		fmt.Println(i)
 		i += 10
 	}
+
+	// loop over array
+	a := []int{1, 2, 3}
+	fmt.Println(a)
+
+	for idx, value := range a {
+		fmt.Println(idx, value)
+	}
 }
