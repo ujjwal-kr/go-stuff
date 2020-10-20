@@ -44,6 +44,11 @@ func main() {
 	*pv = 4
 	fmt.Println(v, pv)
 
+	// Two pointers of same value have the same address
+
+	pv2 := &v
+	fmt.Println(pv2)
+
 	// Structs and types
 
 	type Request struct {
