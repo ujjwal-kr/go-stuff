@@ -36,6 +36,14 @@ func main() {
 	p["age"] = 16
 	fmt.Println(m["name"], m["role"], p["age"])
 
+	// Pointers
+
+	v := 5
+	pv := &v
+	fmt.Println(v, pv)
+	*pv = 4
+	fmt.Println(v, pv)
+
 	// Structs and types
 
 	type Request struct {
