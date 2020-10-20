@@ -67,4 +67,13 @@ func main() {
 	ar.Username = "Ujjwal"
 	ar.Password = "123"
 	fmt.Println(ar.Resource, ar.Username)
+
+	// Diff `method`
+
+	ar2 := &AuthenticatedRequest{
+		Username: "Ujjwal",
+		Password: "Password",
+	}
+	fmt.Println(ar2)
+
 }
