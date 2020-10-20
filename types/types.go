@@ -1,6 +1,8 @@
-package main
+package types
 
-import "fmt"
+import (
+	"fmt"
+)
 
 func main() {
 	// bool
@@ -33,4 +35,20 @@ func main() {
 	m["role"] = "dev"
 	p["age"] = 16
 	fmt.Println(m["name"], m["role"], p["age"])
+
+	// Structs and types
+
+	type Request struct {
+		Resource string
+	}
+	type AuthenticatedRequest struct {
+		Request
+		Username, Password string
+	}
+	ar := new(AuthenticatedRequest)
+	ar.Request.Resource = "https://google.com"
+	ar.Resource = "https://google.com" // Same as above
+	ar.Username = "Ujjwal"
+	ar.Password = "123"
+	fmt.Println(ar.Resource, ar.Username)
 }
