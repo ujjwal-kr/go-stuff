@@ -47,7 +47,10 @@ func main() {
 	// Two pointers of same value have the same address
 
 	pv2 := &v
-	fmt.Println(pv2)
+	fmt.Println(v, pv2)
+
+	x := v
+	fmt.Println(x, &x) // two variables of same value does not have same value
 
 	// Structs and types
 
