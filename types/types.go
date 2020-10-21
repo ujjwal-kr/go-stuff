@@ -70,7 +70,7 @@ func main() {
 
 	// Diff `method`
 
-	ar2 := &AuthenticatedRequest{
+	ar2 := AuthenticatedRequest{
 		Username: "Ujjwal",
 		Password: "Password",
 	}
